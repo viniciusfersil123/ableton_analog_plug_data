@@ -9,12 +9,25 @@
     "channels": 2
   },
   "components": {
-    "knob1": {
+    "volume": {
       "component": "AnalogControl",
       "pin": 28
+    },
+    "release": {
+      "component": "AnalogControl",
+      "pin": 25
+    },
+    "attack": {
+      "component": "AnalogControl",
+      "pin": 24
+    },
+    "time": {
+      "component": "AnalogControl",
+      "pin": 23
+    },
+    "pitch_env": {
+      "component": "AnalogControl",
+      "pin": 22
     }
-  },
-  "aliases": {
-    "knob": "knob1"
   }
 }

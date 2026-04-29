@@ -262,6 +262,7 @@
 #X obj 1330 844 hsl 128 17 0.01 1 1 0 empty empty Env\ Amount -2 -8 0 10 #191919 #e1e1e1 #e1e1e1 0 1;
 #X obj 1330 880 hsl 128 17 0.01 1 1 0 empty empty Mix -2 -8 0 10 #191919 #e1e1e1 #e1e1e1 0 1;
 #X obj 795 868 osc~ 440;
+#X text 67 173 reimplementar patch para 12 controles Knobs;
 #X connect 0 0 3 0;
 #X connect 0 1 3 1;
 #X connect 2 0 6 3;
@@ -347,5 +348,3 @@
 #X connect 82 0 84 0;
 #X connect 83 0 77 1;
 #X connect 84 0 81 0;
-#X connect 88 0 1 0;
-#X connect 88 0 1 1;

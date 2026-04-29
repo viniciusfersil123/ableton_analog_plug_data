@@ -1,0 +1,11 @@
+#N canvas 827 239 734 565 12;
+#X obj 651 576 dac~;
+#X obj 512 309 r knob1 @hv_param;
+#X obj 512 360 * 127;
+#X obj 651 499 osc~ 220;
+#X obj 642 430 mtof;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 3 0;

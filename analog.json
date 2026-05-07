@@ -9,25 +9,116 @@
     "channels": 2
   },
   "components": {
+    "pot_mux": {
+      "component": "CD4051",
+      "mux_count": 8,
+      "pin": {
+        "adc": 15,
+        "sel0": 0,
+        "sel1": 1,
+        "sel2": 2
+      }
+    },
+
     "volume": {
       "component": "AnalogControl",
       "pin": 28
     },
-    "release": {
+    "lfo_amount": {
       "component": "AnalogControl",
       "pin": 25
     },
-    "attack": {
+    "time": {
       "component": "AnalogControl",
       "pin": 24
     },
-    "time": {
+    "pitch_env": {
       "component": "AnalogControl",
       "pin": 23
     },
-    "pitch_env": {
+    "detune": {
       "component": "AnalogControl",
       "pin": 22
+    },
+    "volume_2": {
+      "component": "AnalogControl",
+      "pin": 21
+    },
+    "lfo_amount_2": {
+      "component": "AnalogControl",
+      "pin": 20
+    },
+    "time_2": {
+      "component": "AnalogControl",
+      "pin": 19
+    },
+    "pitch_env_2": {
+      "component": "AnalogControl",
+      "pin": 18
+    },
+    "detune_2": {
+      "component": "AnalogControl",
+      "pin": 17
+    },
+    "lfo_freq": {
+      "component": "AnalogControl",
+      "pin": 16
+    },
+    "waveshape": {
+      "component": "Switch",
+      "pin": 13
+    },
+    "octave": {
+      "component": "Switch",
+      "pin": 12
+    },
+    "waveshape_2": {
+      "component": "Switch",
+      "pin": 11
+    },
+    "octave_2": {
+      "component": "Switch",
+      "pin": 9
+    },
+    "attack": {
+      "component": "CD4051AnalogControl",
+      "index": 0,
+      "parent": "pot_mux"
+    },
+    "release": {
+      "component": "CD4051AnalogControl",
+      "index": 3,
+      "parent": "pot_mux"
+    },
+    "noise_volume": {
+      "component": "CD4051AnalogControl",
+      "index": 1,
+      "parent": "pot_mux"
+    },
+    "noise_color": {
+      "component": "CD4051AnalogControl",
+      "index": 2,
+      "parent": "pot_mux"
+    },
+    "filter_cutoff": {
+      "component": "CD4051AnalogControl",
+      "index": 4,
+      "parent": "pot_mux"
+    },
+    "filter_resonance": {
+      "component": "CD4051AnalogControl",
+      "index": 5,
+      "parent": "pot_mux"
+    },
+    "filter_env_amount": {
+      "component": "CD4051AnalogControl",
+      "index": 6,
+      "parent": "pot_mux"
+    },
+    "filter_lfo_amount": {
+      "component": "CD4051AnalogControl",
+      "index": 7,
+      "parent": "pot_mux"
     }
   }
 }

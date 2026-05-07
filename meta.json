@@ -1,0 +1,7 @@
+{
+  "daisy": {
+    "board_file": "/home/vinicius/Projects/ableton_analog_plug_data/analog.json",
+    "linker_script": "../../libdaisy/core/STM32H750IB_sram.lds",
+    "bootloader": "BOOT_SRAM"
+  }
+}

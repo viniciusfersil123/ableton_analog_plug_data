@@ -75,8 +75,8 @@
 #X obj 820 321 s voice_presets;
 #X msg 641 294 release \$1;
 #X msg 482 294 attack \$1;
-#X obj 1220 53 keyboard 16 80 4 2 0 0 empty empty;
-#X obj 1220 176 unpack f f;
+#X obj 960 16 keyboard 16 80 4 2 0 0 empty empty;
+#X obj 960 121 unpack f f;
 #X connect 0 0 7 0;
 #X connect 1 0 6 0;
 #X connect 3 0 75 0;

@@ -14,7 +14,6 @@
 #X obj 1022 365 s \$0_midi_msg1;
 #X obj 1257 291 r \$0_midi_msg1;
 #X msg 1022 334 midi_msg_p \$1 \$2;
-#X obj 1317 361 print;
 #X connect 0 0 1 0;
 #X connect 2 0 0 0 32.................O....zJ...vC....sB...jO....;
 #X connect 2 0 10 0;

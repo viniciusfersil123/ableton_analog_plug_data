@@ -74,9 +74,9 @@
 #X obj 881 494 r \$0_midi_vel;
 #X obj 669 961 *~;
 #X obj 1451 216 s \$0_waveshape;
-#X obj 669 1045 outlet~;
-#X obj 717 972 r \$0_volume, f 12;
-#X obj 669 1008 *~;
+#X obj 669 1069 outlet~;
+#X obj 717 961 r \$0_volume, f 12;
+#X obj 669 1032 *~;
 #X obj 1484 186 s \$0_volume, f 12;
 #X obj 881 530 / 127;
 #X obj 861 776 line~;
@@ -113,6 +113,8 @@
 #X obj 1059 706 sig~;
 #X obj 1059 743 lop~ 30;
 #X obj 545 850 lop~ 30;
+#X msg 717 986 \$1 15;
+#X obj 717 1023 line~;
 #X connect 0 0 1 0;
 #X connect 1 0 5 1 32.................GA...L9++++Q....i++++iH....;
 #X connect 2 0 3 0;
@@ -190,7 +192,7 @@
 #X connect 71 0 84 1;
 #X connect 72 0 79 0;
 #X connect 73 0 77 0;
-#X connect 76 0 77 1 32.................D....v8+++OA....b++++GA....;
+#X connect 76 0 114 0;
 #X connect 77 0 75 0;
 #X connect 79 0 83 0;
 #X connect 80 0 73 1 32.................P....vz+++OD....L8+++aJ....;
@@ -235,3 +237,5 @@
 #X connect 111 0 112 0;
 #X connect 112 0 88 1;
 #X connect 113 0 94 1;
+#X connect 114 0 115 0;
+#X connect 115 0 77 1;

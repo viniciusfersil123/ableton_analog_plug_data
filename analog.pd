@@ -1,8 +1,8 @@
 #N canvas 827 239 734 565 12;
 #X obj 537 354 r pitch_env @hv_param;
 #X obj 708 357 r time @hv_param;
-#X obj 35 68 knob 50 0.01 1 2 0.01 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0.01 empty empty 0 12 6 -15 0 1 0 0;
-#X obj 187 70 knob 50 0.01 1 2 0.01 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0.01 empty empty 0 12 6 -15 0 1 0 0;
+#X obj 35 68 knob 50 0.05 1 2 0.05 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0.05 empty empty 0 12 6 -15 0 1 0 0;
+#X obj 187 70 knob 50 0.015 1 2 0.015 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0.015 empty empty 0 12 6 -15 0 1 0 0;
 #X obj 358 71 knob 50 0 1 2 0 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0 empty empty 0 12 6 -15 0 1 0 0;
 #X obj 708 385 knob 50 0 1 2 0 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0 empty empty 0 12 6 -15 0 1 0 0;
 #X obj 537 382 knob 50 0 1 2 0 empty empty #191919 #696969 #E1E1E1 1 0 0 0 1 270 0 0 0 empty empty 0 12 6 -15 0 1 0 0;

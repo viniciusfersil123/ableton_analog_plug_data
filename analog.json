@@ -19,7 +19,16 @@
         "sel2": 2
       }
     },
-
+    "pot_mux_2": {
+      "component": "CD4051",
+      "mux_count": 8,
+      "pin": {
+        "adc": 16,
+        "sel0": 0,
+        "sel1": 1,
+        "sel2": 2
+      }
+    },
     "volume": {
       "component": "AnalogControl",
       "pin": 28
@@ -60,10 +69,6 @@
       "component": "AnalogControl",
       "pin": 17
     },
-    "lfo_amount_2": {
-      "component": "AnalogControl",
-      "pin": 16
-    },
     "waveshape": {
       "component": "Switch",
       "pin": 13
@@ -83,6 +88,10 @@
     "waveshape_lfo": {
       "component": "Switch",
       "pin": 4
+    },
+    "filter_select": {
+      "component": "Switch",
+      "pin": 5
     },
     "attack": {
       "component": "CD4051AnalogControl",
@@ -112,6 +121,26 @@
     "pitch_env_2": {
       "component": "CD4051AnalogControl",
       "index": 7,
+      "parent": "pot_mux"
+    },
+    "lfo_amount_2": {
+      "component": "CD4051AnalogControl",
+      "index": 0,
+      "parent": "pot_mux_2"
+    },
+    "cutoff": {
+      "component": "CD4051AnalogControl",
+      "index": 4,
+      "parent": "pot_mux"
+    },
+    "resonance": {
+      "component": "CD4051AnalogControl",
+      "index": 1,
+      "parent": "pot_mux_2"
+    },
+    "lfo_cutoff": {
+      "component": "CD4051AnalogControl",
+      "index": 2,
       "parent": "pot_mux"
     }
   }

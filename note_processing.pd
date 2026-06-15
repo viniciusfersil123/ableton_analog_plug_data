@@ -72,11 +72,11 @@
 #X obj 941 653 * 15000;
 #X obj 836 658 * 15000;
 #X obj 881 494 r \$0_midi_vel;
-#X obj 669 961 *~;
+#X obj 669 1011 *~;
 #X obj 1451 216 s \$0_waveshape;
-#X obj 669 1077 outlet~;
-#X obj 722 946 r \$0_volume, f 12;
-#X obj 669 1040 *~;
+#X obj 669 1127 outlet~;
+#X obj 722 996 r \$0_volume, f 12;
+#X obj 669 1090 *~;
 #X obj 1484 186 s \$0_volume, f 12;
 #X obj 881 530 / 127;
 #X obj 870 783 line~;
@@ -88,8 +88,8 @@
 #X obj 1517 158 s \$0_timbre, f 12;
 #X obj 1286 712 r \$0_timbre, f 12;
 #X obj 677 735 *~, f 5;
-#X obj 789 850 expr~ if($v1 > 1 \, 2-$v1 \, $v1);
-#X obj 789 883 expr~ if($v1 > -1 \, -2-$v1 \, $v1);
+#X obj 789 875 expr~ if($v1 > 1 \, 2-$v1 \, $v1);
+#X obj 789 908 expr~ if($v1 > -1 \, -2-$v1 \, $v1);
 #X obj 340 622 phasor~;
 #X obj 1188 87 route pitch_env midi_msg_p time octave detune lfo_amount attack release waveshape volume timbre timbre_lfo;
 #X obj 1550 132 s \$0_timbre_lfo, f 14;
@@ -113,9 +113,10 @@
 #X obj 1059 706 sig~;
 #X obj 1059 743 lop~ 30;
 #X obj 545 850 lop~ 30;
-#X msg 722 971 \$1 15;
-#X obj 722 1008 line~;
-#X obj 870 820 pow~ 4;
+#X msg 722 1021 \$1 15;
+#X obj 722 1058 line~;
+#X obj 870 814 *~;
+#X obj 870 850 *~;
 #X connect 0 0 1 0;
 #X connect 1 0 5 1 32.................GA...L9++++Q....i++++iH....;
 #X connect 2 0 3 0;
@@ -197,6 +198,7 @@
 #X connect 77 0 75 0;
 #X connect 79 0 83 0;
 #X connect 80 0 116 0;
+#X connect 80 0 116 1;
 #X connect 81 0 80 0 32.................T....j8+++OE....Y++++2A....;
 #X connect 82 0 81 0;
 #X connect 83 0 84 0 32.................I....X6+++eB....19+++eF....;
@@ -240,4 +242,6 @@
 #X connect 113 0 94 1;
 #X connect 114 0 115 0;
 #X connect 115 0 77 1 32.................G....b8++++A....W++++2.....;
-#X connect 116 0 73 1 48......................n3+++O.....J9+++G....vP++++A....Lz+++ud....;
+#X connect 116 0 117 0;
+#X connect 116 0 117 1;
+#X connect 117 0 73 1;

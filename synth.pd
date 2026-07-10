@@ -10,7 +10,7 @@
 #X obj 1227 235 s~ \$0_voice1;
 #X msg 1227 98 midi_msg_p \$1 \$2;
 #X obj 78 809 s \$0_midi_msg_1;
-#X obj 1227 62 r \$0_midi_msg_1;
+#X obj 1227 40 r \$0_midi_msg_1;
 #X obj 95 783 s \$0_midi_msg_2;
 #X obj 1227 416 single_voice;
 #X obj 1255 348 r \$0_voice_presets;
@@ -103,7 +103,7 @@
 #X obj 1700 451 + 0;
 #X obj 2252 64 r \$0_midi_msg;
 #X obj 2252 128 unpack f f;
-#X obj 29 136 s \$0_midi_msg;
+#X obj -10 140 s \$0_midi_msg;
 #X obj 2171 656 r \$0_env_filter_amnt;
 #X obj 834 140 s \$0_env_filter_amnt;
 #X obj 2214 245 r \$0_attack;
@@ -232,7 +232,7 @@
 #X connect 107 0 90 0;
 #X connect 108 0 91 0;
 #X connect 109 0 114 0;
-#X connect 110 0 3 0 32.................q.........vJ..........C....;
+#X connect 110 0 3 0;
 #X connect 110 0 104 0;
 #X connect 110 1 35 0 32.................s....rA...PK....a....zS....;
 #X connect 110 2 30 0 32.................R....T8+++uD....U++++iA....;

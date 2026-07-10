@@ -29,7 +29,7 @@
         "sel2": 2
       }
     },
-    "volume": {
+    "cv": {
       "component": "AnalogControl",
       "pin": 28
     },
@@ -92,6 +92,10 @@
     "filter_select": {
       "component": "Switch",
       "pin": 5
+    },
+    "gate": {
+      "component": "GateIn",
+      "pin": 6
     },
     "attack": {
       "component": "CD4051AnalogControl",
